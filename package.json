@@ -1,0 +1,51 @@
+{
+  "name": "bb-plugin-linear-plus",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicegold/bb-plugin-linear-plus.git"
+  },
+  "type": "module",
+  "engines": {
+    "bb": ">=0.49",
+    "bbPluginSdk": ">=0.6.132"
+  },
+  "bb": {
+    "name": "Linear+",
+    "description": "Taskboard add-on: the thread's ticket as a header button, and a ticket picker for new threads that titles, links and names the branch.",
+    "branding": {
+      "icon": "Layers"
+    },
+    "server": "./server.ts",
+    "app": "./app.tsx"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.5.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.6.132",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0",
+    "@radix-ui/react-dialog": "^1.3.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.7.0",
+    "vitest": "^3.2.4",
+    "jsdom": "^26.1.0",
+    "@testing-library/react": "^16.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@types/better-sqlite3": "^7.6.12",
+    "hono": "^4.11.9"
+  },
+  "description": "Taskboard add-on: the thread's ticket as a header button, and a ticket picker for new threads that titles, links and names the branch.",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "build": "bb plugin build"
+  }
+}
